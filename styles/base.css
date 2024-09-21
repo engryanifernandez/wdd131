@@ -55,10 +55,14 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: overline;
+    background-color: #b1c54f;
+    color: #000000;
+    transform: translateY(-5px);
 }
 
 /* Main content styles */
