@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Hazel Diane Fernandez</title>
     <meta name="description"
         content="WDD 131 - Dynamic Web Fundamentals, Hazel Diane Fernandez, Web Development Resources, Personal Introduction, LinkedIn, BYU I-Learn, Favorite Scripture">
     <meta name="author" content="Hazel Diane Fernandez">
-    <link rel="stylesheet" href="styles.css">
+    <title>WDD 131 - Dynamic Web Fundamentals - Hazel Diane Fernandez</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
@@ -16,17 +17,20 @@
         <h1>WDD 131: Dynamic Web Fundamentals - <span>Hazel Diane Fernandez</span></h1>
         <nav>
             <ul>
-                <li><a href="https://linkedin.com/">LinkedIn</a></li>
-                <li><a href="#">I-Learn</a></li>
-                <li><a href="#">Scripture</a></li>
+                <li><a href="https://www.linkedin.com/in/engrmisshart/">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/16?lang=eng&id=p33-note33e_p1#p33">Scripture</a>
+                </li>
                 <li><a href="#">Final Project</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="about-me">
+        <section class="card">
             <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="Yani's Profile Picture">
             <p>Hi, I'm Hazel Diane Fernandez, but you can call me Yani!
                 I'm a licensed Civil Engineer living in Zambales, Philippines,
                 with a passion for creating solutions that make a difference in my community.
@@ -39,8 +43,25 @@
                 and a service missionary for BYU Pathway Worldwide.
                 When I'm not working or studying, you'll probably find me playing the piano,
                 guitar, or catching up on some favorite TV shows with my fiancé, Caleb.</p>
-            <img src="images/profile.jpg" alt="Hazel Diane Fernandez">
         </section>
+
+        <section class="location">
+            <h2>Zambales, Philippines</h2>
+            <p>The Philippines is an archipelago of over 7,000 islands located in Southeast Asia,
+                bordered by the Pacific Ocean. It is renowned for its rich biodiversity,
+                being home to about 5% of the world's flora and fauna,
+                with a significant number of species endemic to the country.
+                The Philippines is famous for its stunning beaches, vibrant coral reefs,
+                and its unique wildlife, including the Philippine eagle, tarsiers,
+                and its vast variety of tropical fruits.
+                It is also a global leader in coconut production and is known for its beautiful landscapes,
+                from the Banaue Rice Terraces to the Chocolate Hills.</p>
+            <figure>
+                <img src="images/philippines-flag.jpeg" alt="Official Flag of Philippines">
+                <figcaption>Official Flag of Philippines</figcaption>
+            </figure>
+        </section>
+
     </main>
 </body>
 
