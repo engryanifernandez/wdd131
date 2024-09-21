@@ -10,11 +10,14 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Hazel Diane Fernandez</title>
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>WDD 131: Dynamic Web Fundamentals - <span>Hazel Diane Fernandez</span></h1>
+    <header class="header">
+        <h1 class="title">WDD 131: Dynamic Web Fundamentals - <span> Hazel Diane Fernandez</span></h1>
         <nav>
             <ul>
                 <li><a href="https://www.linkedin.com/in/engrmisshart/">LinkedIn</a></li>
@@ -29,9 +32,8 @@
 
     <main>
         <section class="card">
-            <section class="about-me">
-                <h2>About Me</h2>
-                <img src="images/profile.jpg" alt="Yani's Profile Picture">
+            <h2 class="card-heading">About Me</h2>
+            <div class="card-description">
                 <p>Hi, I'm Hazel Diane Fernandez, but you can call me Yani!
                     I'm a licensed Civil Engineer living in Zambales, Philippines,
                     with a passion for creating solutions that make a difference in my community.
@@ -44,10 +46,18 @@
                     and a service missionary for BYU Pathway Worldwide.
                     When I'm not working or studying, you'll probably find me playing the piano,
                     guitar, or catching up on some favorite TV shows with my fiancé, Caleb.</p>
-            </section>
+                <img src="images/profile.jpg" alt="Yani's Profile Picture" class="profile-pic" loading="lazy">
+            </div>
 
-            <section class="location">
-                <h3>Zambales, Philippines</h3>
+            <div class="card-location">
+                <h2 class="card-place">Zambales, Philippines</h2>
+            </div>
+
+            <div class="card-description">
+                <figure>
+                    <img src="images/philippines-flag.jpeg" alt="Official Flag of Philippines">
+                    <figcaption>Official Flag of Philippines</figcaption>
+                </figure>
                 <p>The Philippines is an archipelago of over 7,000 islands located in Southeast Asia,
                     bordered by the Pacific Ocean. It is renowned for its rich biodiversity,
                     being home to about 5% of the world's flora and fauna,
@@ -57,30 +67,29 @@
                     and its vast variety of tropical fruits.
                     It is also a global leader in coconut production and is known for its beautiful landscapes,
                     from the Banaue Rice Terraces to the Chocolate Hills.</p>
-                <figure>
-                    <img src="images/philippines-flag.jpeg" alt="Official Flag of Philippines">
-                    <figcaption>Official Flag of Philippines</figcaption>
-                </figure>
-            </section>
+            </div>
+
         </section>
 
         <section class="card">
-            <h2>Web Dev Resources</h2>
-            <ul>
-                <li><a href="https://dev.to/">Dev.to Community</a></li>
-                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                <li><a href="https://www.udemy.com/">Udemy</a></li>
-                <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
-            </ul>
+            <h2 class="card-heading">Web Dev Resources</h2>
+            <div class="card-description">
+                <ul class="list">
+                    <li><a href="https://dev.to/">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/">Udemy</a></li>
+                    <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
+                </ul>
+            </div>
         </section>
 
     </main>
 
     <footer>
         <p>&copy;<span id="currentyear"></span>🌸 Hazel Diane Fernandez 🌸 Zambales, Philippines</p>
-        <p id="lastModified"></p>
+        <p class="modification"><span id="lastModified"><span><span></span></span></span></p>
     </footer>
 
 
