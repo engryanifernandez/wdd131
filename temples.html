@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple album page created by Hazel Diane Fernandez for WDD 131: 
+        Dynamic Web Fundamentals. This responsive webpage showcases a picture album of temples with a 
+        user-friendly hamburger menu and dynamic interactions using JavaScript.">
+    <meta name="author" content="Hazel Diane Fernandez">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#" onclick="myFunction(this)">
+                        <div class="container">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </a>
+                </li>
+                <li><a class="currentpage" href="/temples.html">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Temple Home</h2>
+        <div class="templecards">
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple">
+                <figcaption>
+                    <p>Salt Lake City UT</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple">
+                <figcaption>
+                    <p>Salt Lake City UT</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple">
+                <figcaption>
+                    <p>Salt Lake City UT</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple">
+                <figcaption>
+                    <p>Salt Lake City UT</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple">
+                <figcaption>
+                    <p>Salt Lake City UT</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple">
+                <figcaption>
+                    <p>Salt Lake City UT</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple">
+                <figcaption>
+                    <p>Salt Lake City UT</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple">
+                <figcaption>
+                    <p>Salt Lake City UT</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple">
+                <figcaption>
+                    <p>Salt Lake City UT</p>
+                </figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌸 Hazel Diane Fernandez 🌸 Zambales, Philippines</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
