@@ -20,17 +20,17 @@ p {
 h1 {
     font-size: 3rem;
     color: var(--d);
-    font-family: "Dancing Script", cursive;
+    font-family: 'Dancing Script', 'Cursive', sans-serif;
 }
 
 h2 {
     font-size: 2.2rem;
     color: var(--m);
-    font-family: "Dancing Script", cursive;
+    font-family: 'Dancing Script', 'Cursive', sans-serif;
 }
 
 p {
-    font-family: "Merriweather", serif;
+    font-family: 'Merriweather', 'Times New Roman', serif;
     font-size: 1.25rem;
 }
 
@@ -54,7 +54,7 @@ footer {
     background-color: var(--l);
     color: var(--d);
     flex-flow: column wrap;
-    font-family: "Merriweather", serif;
+    font-family: 'Merriweather', 'Times New Roman', serif;
 }
 
 .ham {
@@ -106,14 +106,14 @@ footer {
     background-color: #f105e1;
     color: white;
     transform: scale(1.1);
-    font-family: "Dancing Script", cursive;
+    font-family: 'Dancing Script', 'Cursive', sans-serif;
 }
 
 .navigation {
     list-style: none;
     padding: 0;
     font-size: 1.75rem;
-    font-family: "Merriweather", serif;
+    font-family: 'Merriweather', 'Times New Roman', serif;
 }
 
 .navigation a {
@@ -136,7 +136,7 @@ footer {
 }
 
 .currentpage {
-    font-family: "Dancing Script", cursive;
+    font-family: 'Dancing Script', 'Cursive', sans-serif;
 }
 
 img {
@@ -153,7 +153,7 @@ figure {
 }
 
 figcaption p {
-    font-family: "Dancing Script", cursive;
+    font-family: 'Dancing Script', 'Cursive', sans-serif;
     font-size: 1.3rem;
 }
 
