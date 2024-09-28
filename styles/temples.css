@@ -20,17 +20,17 @@ p {
 h1 {
     font-size: 4.5rem;
     color: var(--d);
-    font-family: "Caveat", cursive;
+    font-family: "Dancing Script", cursive;
 }
 
 h2 {
     font-size: 3.0rem;
     color: var(--m);
-    font-family: "Barrio", system-ui;
+    font-family: "Dancing Script", cursive;
 }
 
 p {
-    font-family: "Noto Serif", serif;
+    font-family: "Merriweather", serif;
     font-size: 1.25rem;
 }
 
@@ -105,14 +105,14 @@ footer {
     background-color: #f105e1;
     color: white;
     transform: scale(1.1);
-    font-family: "Barrio", system-ui;
+    font-family: "Dancing Script", cursive;
 }
 
 .navigation {
     list-style: none;
     padding: 0;
     font-size: 2rem;
-    font-family: "Noto Serif", serif;
+    font-family: "Merriweather", serif;
 }
 
 .navigation a {
@@ -135,7 +135,7 @@ footer {
 }
 
 .currentpage {
-    font-family: "Caveat", cursive;
+    font-family: "Dancing Script", cursive;
 }
 
 img {
@@ -152,7 +152,7 @@ figure {
 }
 
 figcaption p {
-    font-family: "Caveat", cursive;
+    font-family: "Dancing Script", cursive;
     font-size: 1.3rem;
 }
 
