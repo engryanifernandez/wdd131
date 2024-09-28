@@ -1,7 +1,8 @@
 :root {
-    --medium: #ff3366;
-    --dark: #011627;
-    --light: #c0b9dd;
+    --l: #f1b6d4;
+    --m: #e93f3f;
+    --n: #e80b5f;
+    --d: #26012a;
 }
 
 * {
@@ -9,23 +10,23 @@
     padding: 0;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
     text-align: center;
-    padding: 0.5rem;
-}
-
-h1, h2 {
-    font-family: "Caveat", cursive;
+    padding: 0.3rem;
 }
 
 h1 {
-    font-size: 3.5rem;
-    color: var(--dark);
+    font-size: 4.5rem;
+    color: var(--d);
+    font-family: "Caveat", cursive;
 }
 
 h2 {
-    font-size: 2.5rem;
-    color: var(--medium);
+    font-size: 3.0rem;
+    color: var(--m);
+    font-family: "Barrio", system-ui;
 }
 
 p {
@@ -36,7 +37,7 @@ p {
 main {
     max-width: 400px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .templecards {
@@ -44,13 +45,14 @@ main {
     grid-template-columns: 1fr;
 }
 
-header, footer {
+header,
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: var(--light);
-    color: var(--dark);
+    background-color: var(--l);
+    color: var(--d);
     flex-flow: column wrap;
 }
 
@@ -58,24 +60,26 @@ header, footer {
     max-width: 63px;
 }
 
-.bar1, .bar2, .bar3 {
+.b1,
+.b2,
+.b3 {
     width: 35px;
     height: 5px;
-    background-color: var(--dark);
+    background-color: var(--d);
     margin: 6px 0;
     transition: 0.4s;
     border-radius: 50px;
 }
 
-.change .bar1 {
+.change .b1 {
     transform: translate(0, 11px) rotate(-45deg);
 }
 
-.change .bar2 {
+.change .b2 {
     opacity: 0;
 }
 
-.change .bar3 {
+.change .b3 {
     transform: translate(0, -11px) rotate(45deg);
 }
 
@@ -98,9 +102,10 @@ header, footer {
 }
 
 .navigation li a:hover {
-    background-color: var(--medium);
-    color: var(--dark);
+    background-color: #f105e1;
+    color: white;
     transform: scale(1.1);
+    font-family: "Barrio", system-ui;
 }
 
 .navigation {
@@ -115,16 +120,16 @@ header, footer {
     flex-flow: row wrap;
     padding: 0.75rem;
     text-decoration: none;
-    color: var(--dark);
+    color: var(--d);
     transition: 0.5s;
-    background-color: var(--light);
+    background-color: var(--l);
     border-radius: 5px;
     justify-content: center;
 }
 
 .navigation li .currentpage {
-    background-color: var(--dark);
-    color: var(--light);
+    background-color: var(--d);
+    color: var(--l);
     transition: 0.5s;
     transform: scale(1.1);
 }
@@ -137,9 +142,21 @@ img {
     width: 100%;
     height: auto;
     border-radius: 10px 10px 0 0;
+
 }
 
 figure {
-    background-color: var(--light);
-    border-radius: 10px;
+    background-color: #f105e1;
+    border-radius: 5px;
+    color: white;
+}
+
+figcaption p {
+    font-family: "Caveat", cursive;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.modification {
+    color: #6015a6;
 }
