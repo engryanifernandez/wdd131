@@ -54,6 +54,7 @@ footer {
     background-color: var(--l);
     color: var(--d);
     flex-flow: column wrap;
+    font-family: "Merriweather", serif;
 }
 
 .ham {
