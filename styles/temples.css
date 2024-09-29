@@ -155,6 +155,7 @@ figure {
 figcaption p {
     font-family: "Great Vibes", cursive;
     font-size: 1.3rem;
+    opacity: 1; color: rgb(255, 255, 255); background-color: rgb(241, 5, 225);
 }
 
 .modification {
