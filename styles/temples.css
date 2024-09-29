@@ -147,7 +147,7 @@ img {
 }
 
 figure {
-    background-color: #ff00ee5b;
+    background-color: #170161d6;
     border-radius: 5px;
     color: white;
 }
@@ -155,7 +155,7 @@ figure {
 figcaption p {
     font-family: "Great Vibes", cursive;
     font-size: 1.3rem;
-    opacity: 1; color: rgb(255, 255, 255); background-color: rgb(241, 5, 225);
+    opacity: 1; color: rgb(255, 255, 255); background-color: rgba(75, 1, 70, 0.275);
 }
 
 .modification {
