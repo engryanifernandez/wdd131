@@ -38,11 +38,11 @@ h2 {
     border-bottom: 0.3rem solid var(--accentColor);
 }
 
-.sectable {
+.floating {
     padding-bottom: 0.75rem;
 }
 
-.sectable:nth-child(2) {
+.floating:nth-child(2) {
     border-bottom: 1px solid #de144a15;
 }
 
@@ -98,7 +98,7 @@ img {
       grid-template-columns: repeat(3, 1fr);
     }
   
-    .sectable {
+    .floating {
       max-width: fit-content;
       margin: 2rem 1rem;
       padding: 0.5rem 1rem 1rem 1rem;
@@ -106,12 +106,12 @@ img {
       opacity: 0.75;
     }
   
-    .sectable:nth-child(2) {
+    .floating:nth-child(2) {
       align-self: center;
       margin-left: 2rem;
     }
   
-    .sectable:nth-child(3) {
+    .floating:nth-child(3) {
       justify-self: flex-end;
       align-self: flex-end;
     }
