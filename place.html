@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bohol Island Page</title>
+    <meta name="description" content="Website about Bohol Island">
+    <meta name="author" content="Hazel Diane Fernandez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer src="scripts/place.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Bohol Island</h1>
+    </header>
+    <main>
+        <section id="hero">
+            <picture>
+                <source srcset="images/boholbeach.webp" media="(max-width: 680px)">
+                <source srcset="images/boholtarsier.webp" media="(max-width: 1000px)">
+                <img src="images/boholchocolatehills.webp" alt="Chocolate Hills" width="563" height="600">
+            </picture>
+        </section>
+        <section id="data" class="sectable">
+            <h2 class="title">Data</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Area:</th>
+                        <td>4,821 sq km</td>
+                    </tr>
+                    <tr>
+                        <th>Population:</th>
+                        <td>1,313,368</td>
+                    </tr>
+                    <tr>
+                        <th>Capital:</th>
+                        <td>Tagbilaran City</td>
+                    </tr>
+                    <tr>
+                        <th>Languages:</th>
+                        <td>Boholano (Cebuano), Tagalog, English</td>
+                    </tr>
+                    <tr>
+                        <th>Currency:</th>
+                        <td>Philippine Peso (₱)</td>
+                    </tr>
+                    <tr>
+                        <th>Time Zone:</th>
+                        <td>UTC+8</td>
+                    </tr>
+                    <tr>
+                        <th>Calling Code:</th>
+                        <td>+63</td>
+                    </tr>
+                    <tr>
+                        <th>Internet TLD:</th>
+                        <td>.ph</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="weather" class="sectable">
+            <h2 class="title">Weather</h2>
+            <img class="weather" src="images/weather-icon.svg" alt="Weather" width="25" height="25">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Temperature:</th>
+                        <td id="temperature">28°C</td>
+                    </tr>
+                    <tr>
+                        <th>Conditions:</th>
+                        <td>Partly Cloudy</td>
+                    </tr>
+                    <tr>
+                        <th>Wind:</th>
+                        <td id="windSpeed">13km/h</td>
+                    </tr>
+                    <tr>
+                        <th>Wind Chill:</th>
+                        <td id="windChill"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> 🌸 Hazel Diane Fernandez 🌸
+        </p>
+        <p>Zambales, Philippines</p>
+        <p class="modification" id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

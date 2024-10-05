@@ -1,0 +1,169 @@
+:root {
+    --lightpink: rgb(250, 191, 200);
+    --Purp: rgb(133, 0, 104);
+    --accentColor: #510037;
+    --fontFamily: "Roboto Slab", serif;
+    --header-font: "Great Vibes", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontFamily);
+}
+
+header {
+    border-bottom: 1rem solid var(--Purp);
+    padding: 1.5rem;
+    background-color: var(--accentColor);
+}
+
+header h1 {
+    color: var(--lightpink);
+    text-align: center;
+    font-family: var(--header-font);
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: var(--header-font);
+    font-size: 2.5rem;
+}
+
+#hero picture img {
+    border-bottom: 0.3rem solid var(--accentColor);
+}
+
+.sectable {
+    padding-bottom: 0.75rem;
+}
+
+.sectable:nth-child(2) {
+    border-bottom: 1px solid #de144a15;
+}
+
+.title {
+    padding: 1rem;
+    text-align: center;
+}
+
+table {
+    margin-inline: auto;
+    border-spacing: 0.5rem;
+}
+
+table tbody tr th {
+    text-align: right;
+}
+
+.weather {
+    display: block;
+    max-width: 100px;
+    height: auto;
+    margin-inline: auto;
+}
+
+footer {
+    padding: 1.5rem;
+    background-color: var(--accentColor);
+    color: var(--lightpink);
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0.3rem;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modification {
+    color: #b47aea;
+}
+
+@media screen and (min-width: 680px) {
+    main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .sectable {
+      max-width: fit-content;
+      margin: 2rem 1rem;
+      padding: 0.5rem 1rem 1rem 1rem;
+      background-color: #f5f5f5aa;
+      opacity: 0.75;
+    }
+  
+    .sectable:nth-child(2) {
+      align-self: center;
+      margin-left: 2rem;
+    }
+  
+    .sectable:nth-child(3) {
+      justify-self: flex-end;
+      align-self: flex-end;
+    }
+  
+    .title {
+      margin: 0 2rem 0 -2rem;
+      background-color: #520051;
+      color: var(--lightpink);
+      text-align: left;
+    }
+  
+    #weather h2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    #weather h2::after {
+      content: "⛅";
+      width: 40px;
+      height: 40px;
+    }
+  
+    #hero picture img {
+      border-bottom: unset;
+    }
+  
+    #hero {
+      grid-row: 1 / 4;
+      grid-column: 1 / 4;
+    }
+  
+    #data {
+      grid-row: 1 / 3;
+      grid-column: 1 / 2;
+    }
+  
+    #weather {
+      grid-row: 2 / 4;
+      grid-column: 3 / -1;
+    }
+  
+    .weather {
+      display: none;
+    }
+  
+    footer p:nth-child(1),
+    footer p:nth-child(2) {
+      display: inline;
+    }
+  
+    #lastModified {
+      margin-top: 0.2rem;
+    }
+  }
