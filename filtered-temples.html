@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple album page created by Hazel Diane Fernandez for WDD 131: 
+        Dynamic Web Fundamentals. This responsive webpage showcases a picture album of temples with a 
+        user-friendly hamburger menu and dynamic interactions using JavaScript.">
+    <meta name="author" content="Hazel Diane Fernandez">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link rel="preload" href="https://fonts.gstatic.com/s/greatvibes/v6/RWmMoKWR9v4ksMfaWd_JN9XFiaQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
+
+
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" onclick="myFunction(this)">
+                        <div class="container">
+                            <div class="b1"></div>
+                            <div class="b2"></div>
+                            <div class="b3"></div>
+                        </div>
+                    </a>
+                </li>
+                <li><a class="currentpage" href="/temples.html">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="templecards">
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple" width="600" height="400">
+                <figcaption>
+                    <p>Salt Lake City UT</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple" width="600" height="400">
+                <figcaption>
+                    <p>Salt Lake City UT</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple" width="600" height="400">
+                <figcaption>
+                    <p>Salt Lake City UT</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple" width="600" height="400">
+                <figcaption>
+                    <p>Salt Lake City UT</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple" width="600" height="400">
+                <figcaption>
+                    <p>Salt Lake City UT</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple" width="600" height="400">
+                <figcaption>
+                    <p>Salt Lake City UT</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple" width="600" height="400">
+                <figcaption>
+                    <p>Salt Lake City UT</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple" width="600" height="400">
+                <figcaption>
+                    <p>Salt Lake City UT</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple" width="600" height="400">
+                <figcaption>
+                    <p>Salt Lake City UT</p>
+                </figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌸 Hazel Diane Fernandez 🌸 Zambales, Philippines</p>
+        <p class="modification"> <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

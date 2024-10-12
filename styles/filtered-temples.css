@@ -1,0 +1,163 @@
+:root {
+    --l: #f1b6d4;
+    --m: #e93f3f;
+    --n: #e80b5f;
+    --d: #26012a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+    padding: 0.3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--d);
+    font-family: "Great Vibes", cursive;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: var(--m);
+    font-family: "Great Vibes", cursive;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+}
+
+main {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.templecards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--l);
+    color: var(--d);
+    flex-flow: column wrap;
+    font-family: "Roboto", sans-serif;
+}
+
+.ham {
+    max-width: 63px;
+}
+
+.b1,
+.b2,
+.b3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--d);
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.change .b1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .b2 {
+    opacity: 0;
+}
+
+.change .b3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.navigation li {
+    display: none;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.responsive li {
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.navigation li:first-child {
+    display: block;
+    max-width: 63px;
+    margin: 0 auto;
+}
+
+.navigation li a:hover {
+    background-color: #f105e1;
+    color: white;
+    transform: scale(1.1);
+    font-family: "Great Vibes", cursive;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    font-size: 1.75rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.navigation a {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: var(--d);
+    transition: 0.5s;
+    background-color: var(--l);
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.navigation li .currentpage {
+    background-color: var(--d);
+    color: var(--l);
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.currentpage {
+    font-family: "Great Vibes", cursive;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+
+}
+
+figure {
+    background-color: #170161d6;
+    border-radius: 5px;
+    color: white;
+}
+
+figcaption p {
+    font-family: "Great Vibes", cursive;
+    font-size: 1.3rem;
+    opacity: 1; color: rgb(255, 255, 255); background-color: rgba(75, 1, 70, 0.275);
+}
+
+.modification {
+    color: #6015a6;
+}
