@@ -94,51 +94,96 @@ const temples = [
     }
 ];
 
-function displayTemples(temples) {
-    const $templeCards = document.querySelector(".container");
-    $templeCards.innerHTML = "";
-    temples.forEach(({ templeName, location, dedicated, area, imageUrl }) => {
-        $templeCards.innerHTML += `
-      <div class="cardContainer">
-        <h3>${templeName}</h3>
-        <div>
-          <p>Location: ${location}</p>
-          <p>Dedicated: ${dedicated}</p>
-          <p>Size: ${area}</p>
-        </div>
-        <figure>
-          <img src="${imageUrl}" alt="${templeName}" loading="lazy" width="1920" height="1080">
-        </figure>
-      </div>
-    `;
-    });
-}
+temples.forEach((temple) => {
+    let card = document.createElement("figure");
+    let h3 = document.createElement("h3");
+    let p1 = document.createElement("p");
+    let p2 = document.createElement("p");
+    let p3 = document.createElement("p");
+    let img = document.createElement("img");
 
-function filterTemples(criteria) {
-    switch (criteria) {
-        case "old":
-            return temples.filter(temple => parseInt(temple.dedicated.split(", ")[0]) < 1900);
-        case "new":
-            return temples.filter(temple => parseInt(temple.dedicated.split(", ")[0]) > 2000);
-        case "large":
-            return temples.filter(temple => temple.area > 90000);
-        case "small":
-            return temples.filter(temple => temple.area < 10000);
-        default:
-            return temples;
-    }
-}
+    h3.textContent = temple.templeName;
+    p1.textContent = "Location: " + temple.location;
+    p2.textContent = "Dedicated: " + temple.dedicated;
+    p3.textContent = "Area: " + temple.area;
+    img.src = temple.imageUrl;
+    img.alt = temple.templeName;
+    img.loading = "lazy";
+    card.appendChild(img);
+    card.appendChild(h3);
+    card.appendChild(p1);
+    card.appendChild(p2);
+    card.appendChild(p3);
 
-document.querySelectorAll("#navBar a").forEach(link => {
-    link.addEventListener("click", event => {
-        event.preventDefault();
-        const criteria = event.target.id;
-        document.querySelector("#mainTitle").textContent = criteria.charAt(0).toUpperCase() + criteria.slice(1);
-        const filteredTemples = filterTemples(criteria);
-        displayTemples(filteredTemples);
-    });
+    document.querySelector("div.templecards").appendChild(card);
 });
 
-window.onload = () => {
-    displayTemples(temples);
-};
+function filterTemples(filter) {
+    let filteredTemples = [];
+    const currentPageClass = document.querySelectorAll(".all");
+    if (filter === "old") {
+        for (let i = 0; i < currentPageClass.length; i++) {
+            currentPageClass[i].classList.remove("currentpage");
+        }
+        document.querySelector(".old").classList.add("currentpage");
+        filteredTemples = temples.filter((temple) => {
+            return temple.dedicated < "1900";
+        });
+    } else if (filter === "new") {
+        for (let i = 0; i < currentPageClass.length; i++) {
+            currentPageClass[i].classList.remove("currentpage");
+        }
+        document.querySelector(".new").classList.add("currentpage")
+        filteredTemples = temples.filter((temple) => {
+            return temple.dedicated > "2000";
+        });
+    } else if (filter === "large") {
+        for (let i = 0; i < currentPageClass.length; i++) {
+            currentPageClass[i].classList.remove("currentpage");
+        }
+        document.querySelector(".large").classList.add("currentpage")
+        filteredTemples = temples.filter((temple) => {
+            return temple.area > 90000;
+        });
+    } else if (filter === "small") {
+        for (let i = 0; i < currentPageClass.length; i++) {
+            currentPageClass[i].classList.remove("currentpage");
+        }
+        document.querySelector(".small").classList.add("currentpage")
+        filteredTemples = temples.filter((temple) => {
+            return temple.area < 10000;
+        });
+    } else {
+        for (let i = 0; i < currentPageClass.length; i++) {
+            currentPageClass[i].classList.remove("currentpage");
+        }
+        filteredTemples = temples;
+        document.querySelector(".home").classList.add("currentpage")
+    }
+
+    document.querySelector("div.templecards").innerHTML = "";
+
+    filteredTemples.forEach((temple) => {
+        let card = document.createElement("figure");
+        let h3 = document.createElement("h3");
+        let p1 = document.createElement("p");
+        let p2 = document.createElement("p");
+        let p3 = document.createElement("p");
+        let img = document.createElement("img");
+
+        h3.textContent = temple.templeName;
+        p1.textContent = "Location: " + temple.location;
+        p2.textContent = "Dedicated: " + temple.dedicated;
+        p3.textContent = "Area: " + temple.area;
+        img.src = temple.imageUrl;
+        img.alt = temple.templeName;
+        img.loading = "lazy";
+        card.appendChild(img);
+        card.appendChild(h3);
+        card.appendChild(p1);
+        card.appendChild(p2);
+        card.appendChild(p3);
+
+        document.querySelector("div.templecards").appendChild(card);
+    });
+}
