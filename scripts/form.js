@@ -33,7 +33,7 @@ if ($prodName) {
     let option = document.createElement("option");
     option.value = product.name;
     option.textContent = product.name;
-    $productName.appendChild(option);
+    $prodName.appendChild(option);
   });
 }
 
