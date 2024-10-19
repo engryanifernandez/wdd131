@@ -26,9 +26,9 @@ const products = [
     }
 ];
 
-const $productName = document.querySelector("#productName");
+const $prodName = document.querySelector("#prodName");
 
-if ($productName) {
+if ($prodName) {
   products.forEach(product => {
     let option = document.createElement("option");
     option.value = product.name;
