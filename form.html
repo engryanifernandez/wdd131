@@ -51,7 +51,7 @@
                 </label>
             </div>
 
-            <div class="installDate">
+            <div>
                 <label for="installDate">Date of Installation:</label>
                 <br><br>
                 <input type="date" name="installDate" id="installDate" required>
@@ -67,14 +67,17 @@
                 Performance</label>
             <label for="design"><input type="checkbox" name="features" id="design" value="design">
                 Design</label>
-            <p>Written Review:</p>
-            <label for="review">
+
+            <div>
+                <label for="review">Written Review:</label>
                 <textarea name="review" id="review" cols="30" rows="10"></textarea>
-            </label>
-            <p>Your Name:</p>
-            <label for="name">
+            </div>
+
+            <div>
+                <label for="name">Your Name:</label>
                 <input type="text" name="name" id="name">
-            </label>
+            </div>
+
             <button type="submit">Post Review</button>
         </form>
     </main>
