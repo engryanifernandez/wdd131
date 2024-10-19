@@ -1,0 +1,81 @@
+:root {
+    --fontHeading: "Great Vibes", cursive;
+    --fontBody: "Roboto", sans-serif;
+    --HeadingColor: #4B0082;
+    --HeadingFontColor: #FFC0CB;
+    --AccentColor: #6A0DAD;
+    --ButtonColor: #D32F2F;
+    --BodyFontColor: #333333;
+    --BodyBackgroundColor: #e0b3e9;
+    --LinkColor: #FF69B4;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    max-width: 1200px;
+    margin-inline: auto;
+    font-family: var(--fontBody);
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 1rem;
+    color: var(--HeadingColor);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #faf1f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    margin-bottom: .5rem;
+  }
+  
+  img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .color-scheme {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .color {
+    min-width: 50px;
+    min-height: 50px;
+    margin-right: 1rem;
+    border-radius: 5px;
+  }
+  
+  .fontGreatVibes {
+    font-family: var(--fontHeading);
+  }
+  
+  .fontRoboto {
+    font-family: var(--fontBody);
+  }
