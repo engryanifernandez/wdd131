@@ -6,7 +6,7 @@
     --AccentColor: #6A0DAD;
     --ButtonColor: #D32F2F;
     --BodyFontColor: #333333;
-    --BodyBackgroundColor: #e0b3e9;
+    --BodyBackgroundColor: #f6d7fd;
     --LinkColor: #FF69B4;
   }
   
@@ -78,4 +78,12 @@
   
   .fontRoboto {
     font-family: var(--fontBody);
+  }
+
+  .heading {
+    background-color: #4B0082;
+  }
+
+  .body {
+    background-color: #f6d7fd;
   }
