@@ -4,7 +4,7 @@
     --HeadingColor: #4B0082;
     --HeadingFontColor: #FFC0CB;
     --AccentColor: #6A0DAD;
-    --ButtonColor: #D32F2F;
+    --ButtonColor: #a30606;
     --BodyFontColor: #333333;
     --BodyBackgroundColor: #f6d7fd;
     --LinkColor: #FF69B4;
@@ -85,5 +85,5 @@
   }
 
   .body {
-    background-color: #FFC0CB;
+    background-color: #fce854;
   }
