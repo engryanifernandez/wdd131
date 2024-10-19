@@ -7,10 +7,10 @@
     <title>WDD 131 Week 5: Product Review Form - Hazel Diane Fernandez</title>
     <link rel="stylesheet" type="text/css" href="styles/form.css">
     <meta name="description" content="Week 5 Assignment: Create a user-friendly product review form 
-        with responsive design for both mobile and desktop. 
-        This project focuses on implementing good form design principles, 
-        including specific field requirements and a submission confirmation page featuring a counter. 
-        Explore an intuitive interface that enhances user experience and encourages feedback.">
+            with responsive design for both mobile and desktop. 
+            This project focuses on implementing good form design principles, 
+            including specific field requirements and a submission confirmation page featuring a counter. 
+            Explore an intuitive interface that enhances user experience and encourages feedback.">
     <meta name="author" content="Hazel Diane Fernandez">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@
         <form action="review.html" method="get">
             <p>Product Name:</p>
             <label for="prodName">
-                <select name="prodName" id="prodName" required autofocus> 
+                <select name="prodName" id="prodName" required autofocus>
                     <option value="" disabled selected>Select a Product...</option>
                 </select>
             </label>
@@ -50,10 +50,12 @@
                     <input type="radio" name="rating" id="rating5" value="5" required>
                 </label>
             </div>
-            <p>Date of Installation:</p>
-            <label for="installDate">
+
+            <div class="installDate">
+                <label for="installDate">Date of Installation:</label>
+                <br><br>
                 <input type="date" name="installDate" id="installDate" required>
-            </label>
+            </div>
 
             <p>Which feature did you find useful in the product? <br>
                 (Check all that apply)</p>
@@ -66,13 +68,12 @@
             <label for="design"><input type="checkbox" name="features" id="design" value="design">
                 Design</label>
             <p>Written Review:</p>
-            <label for="review">
-                <textarea name="review" id="review" cols="30" rows="10"></textarea>
-            </label>
+
+            <textarea name="review" id="review" cols="30" rows="10"></textarea>
             <p>Your Name:</p>
-            <label for="name">
-                <input type="text" name="name" id="name">
-            </label>
+
+            <input type="text" name="name" id="name">
+
             <button type="submit">Post Review</button>
         </form>
     </main>
