@@ -3,22 +3,29 @@
         display: none;
     }
 
-    header {
+    #mainNav.show {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        flex-flow: row wrap;
+        width: 100%;
+        background-color: var(--heading);
     }
 
-    #mainNav {
-        position: static;
-        display: block;
-        width: auto;
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        align-items: center;
     }
 
     nav ul li {
-        margin-bottom: 0;
+        margin-bottom: 1rem;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 1rem;
+        text-align: center;
     }
 
     main {
