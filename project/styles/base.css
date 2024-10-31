@@ -37,6 +37,10 @@ h3 {
     font-size: 2rem;
 }
 
+h4 {
+    font-size: 1.5rem;
+}
+
 a {
     color: #3498db;
     text-decoration: none;
@@ -170,7 +174,16 @@ textarea {
     border-radius: 4px;
 }
 
-button {
+.cta {
+    background-color: #e9c46a;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+button, .cta-button {
     background-color: var(--button);
     color: #fff;
     padding: 0.8rem 1rem;
@@ -180,8 +193,8 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #27ae60;
+button:hover, .cta-button:hover {
+    background-color: var(--link);
 }
 
 .newsItem {
@@ -195,27 +208,33 @@ button:hover {
     font-size: 0.9rem;
 }
 
-.roomGallery {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.staff-member {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
-.roomGallery figure {
+.staff-member figure {
     margin: 0;
     text-align: center;
+    border: thin #c0c0c0 solid;
+    padding: 5px;
 }
 
-.roomGallery img {
+.staff-member img {
     max-width: 100%;
     height: auto;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.roomGallery figcaption {
-    margin-top: 0.5rem;
+.staff-member figcaption {
     font-style: italic;
+    font-size: 1rem;
+    margin: 0px 5px;
 }
 
 .tableResponsive {
@@ -271,13 +290,13 @@ td {
     border: none;
     position: relative;
     color: #fff;
-    background-color: #707070;
+    background-color: #681a1a;
     padding: .75rem .75rem .75rem 55%;
 }
 
 td {
     background-color: #c2c2c2;
-    color: #000;
+    color: #5e1818;
 }
 
 td:nth-child(odd) {
@@ -293,7 +312,7 @@ td:before {
     padding: 12px;
     white-space: nowrap;
     font-weight: bold;
-    background-color: #1a1a1a;
+    background-color: #260707;
     color: #fff;
 }
 

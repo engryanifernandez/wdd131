@@ -54,10 +54,11 @@
                 <table id="bookingsTable">
                     <thead>
                         <tr>
-                            <th>Training Date</th>
-                            <th>Start Time</th>
-                            <th>Duration (Hours)</th>
-                            <th>Location</th>
+                            <th>Name</th>
+                            <th>Session</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Duration</th>
                             <th>Instructor</th>
                         </tr>
                     </thead>
@@ -68,7 +69,7 @@
         <section id="bookingForm">
             <h2>Training Session Booking Form</h2>
             <form id="trainingForm">
-                <label for="bandName">Your Name:</label>
+                <label for="traineeName">Your Name:</label>
                 <input type="text" id="traineeName" name="traineeName" required>
 
                 <label for="sessionType">Session Type:</label>
@@ -95,6 +96,14 @@
                 <label for="duration">Duration (hours):</label>
                 <input type="number" id="duration" name="duration" min="1" max="8" required>
 
+                <label for="instructor">Instructor:</label>
+                <select id="instructor" name="instructor" required>
+                    <option value="">Select a Instructor</option>
+                    <option value="Caleb Anderson">Caleb Anderson</option>
+                    <option value="Jane Doe">Jane Doe</option>
+                    <option value="Jake Thompson">Jake Thompson</option>
+                </select>
+
                 <button type="submit">Book Now</button>
             </form>
         </section>
@@ -104,7 +113,7 @@
         <p>&copy; 2024 Caleb's Firearm Training. All rights reserved.</p>
     </footer>
 
-    <script src="scripts/script.js"></script>
+    <script src="scripts/training.js"></script>
 </body>
 
 </html>

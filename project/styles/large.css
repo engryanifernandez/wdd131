@@ -22,13 +22,13 @@
       padding: 2rem;
     }
   
-    .roomGallery {
+    .rehearsalRooms {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
     }
   
-    .roomGallery figure {
+    .rehearsalRooms figure {
       flex-basis: calc(33.333% - 1rem);
     }
   
