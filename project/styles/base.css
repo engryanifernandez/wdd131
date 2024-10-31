@@ -82,6 +82,7 @@ footer {
     color: var(--headingfont);
     flex-flow: column wrap;
     font-family: "Roboto", sans-serif;
+    position: relative;
 }
 
 #mainNav {
@@ -105,11 +106,15 @@ footer {
     margin: 0 auto;
 }
 
+.navContainer li a {
+    padding: 10px 15px; /* Add consistent padding */
+    display: inline-block; /* Ensure it’s an inline-block for better spacing */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
 .navContainer li a:hover {
     background-color: var(--link);
     color: white;
-    transform: scale(1.1);
-    font-family: var(--header-font);
 }
 
 #mainNav .logo a:hover {
