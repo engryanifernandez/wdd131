@@ -136,10 +136,6 @@ nav ul {
  
 }
 
-nav ul li {
-    flex-direction: column;
-}
-
 .logo {
     margin-right: 50px;
 }
