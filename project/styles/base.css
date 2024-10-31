@@ -109,18 +109,23 @@ footer {
     font-family: var(--header-font);
 }
 
+#mainNav .logo a:hover {
+    background-color: transparent;
+    color: inherit;
+    transform: none;
+}
+
 nav {
     display: flex;
     align-items: center;
     font-size: 1.2rem;
 }
 
-.logo {
-    margin-right: 20px;
+#mainNav .logo {
+    margin-right: 120px;
 }
 
-.logo img {
-    max-width: 100%;
+#mainNav .logo img {
     height: auto;
     width: 150px;
     border-radius: 75px;
