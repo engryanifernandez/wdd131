@@ -5,7 +5,7 @@
 
     .navContainer {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         flex-flow: row wrap;
