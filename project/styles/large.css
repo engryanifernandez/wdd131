@@ -6,13 +6,11 @@
     #mainNav {
         position: static;
         display: block;
-        justify-content: space-around;
         width: auto;
     }
 
     #mainNav.show {
         flex-direction: column; 
-        
         width: 100%; 
         background-color: var(--heading); 
     }
