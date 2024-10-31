@@ -96,7 +96,7 @@ footer {
 
 #mainNav.show {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: var(--heading);
 }
 
