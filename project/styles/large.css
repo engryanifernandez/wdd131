@@ -10,23 +10,17 @@
     }
 
     #mainNav.show {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        flex-direction: row;
         background-color: var(--heading);
     }
 
     nav ul {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     nav ul li {
-        margin-bottom: 1rem;
+        margin-bottom: 0;
     }
 
     nav ul li a {
