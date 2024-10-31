@@ -83,6 +83,7 @@ footer {
     flex-flow: column wrap;
     font-family: "Roboto", sans-serif;
     position: relative;
+    text-align: center;
 }
 
 #mainNav {
@@ -130,12 +131,12 @@ nav {
 }
 
 nav ul {
-    display: flex; /* Enable flexbox for the list */
-    flex-direction: row; /* Stack items vertically */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    list-style: none; /* Remove default list styles */
-    align-items: center; /* Center items horizontally */
+    display: flex; 
+    flex-direction: row; 
+    padding: 0; 
+    margin: 0; 
+    text-align: center;
+ 
 }
 
 .logo {
