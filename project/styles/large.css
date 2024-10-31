@@ -1,89 +1,120 @@
 @media (min-width: 600px) {
-    #menuToggle {
-      display: none;
-    }
-  
     #mainNav {
-        display: grid; /* Change to grid layout */
-        grid-template-rows: repeat(auto-fill, minmax(50px, 1fr)); /* Create rows for each menu item */
-        gap: 10px; /* Space between items */
-        background-color: var(--mainColor); /* Optional: Background color */
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--heading);
+        /* Optional: Background color for mobile */
+        z-index: 10;
+    }
+
+    /* Display navigation when the menu toggle is activated */
+    #mainNav.show {
+        display: block;
     }
 
     #mainNav ul {
-        display: contents; /* Allow items to follow the grid from the parent */
+        display: flex;
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
     }
 
     #mainNav ul li {
-        text-align: center; /* Center-align menu items for mobile */
+        width: 100%;
+        /* Full width for each menu item */
+        text-align: center;
+        padding: 10px 0;
     }
 
     #mainNav ul li a {
         display: block;
-        padding: 10px;
         width: 100%;
+        padding: 15px;
+        color: #fff;
+        text-decoration: none;
     }
-  
+
+    /* Style for the menu toggle button */
+    #menuToggle {
+        display: inline-block;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    #menuToggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background-color: #333;
+        /* Adjust color as needed */
+        transition: all 0.3s ease;
+    }
+
     main {
-      padding: 2rem;
+        padding: 2rem;
     }
-  
+
     .rehearsalRooms {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-  
+
     .rehearsalRooms figure {
-      flex-basis: calc(33.333% - 1rem);
+        flex-basis: calc(33.333% - 1rem);
     }
-  
+
     table,
     thead,
     tbody,
     th,
     td,
     tr {
-      display: revert;
+        display: revert;
     }
-  
+
     thead tr {
-      position: static;
+        position: static;
     }
-  
+
     th {
-      padding: 0.75rem;
-      text-align: center;
-      background-color: #444444;
-      color: #fff;
+        padding: 0.75rem;
+        text-align: center;
+        background-color: #444444;
+        color: #fff;
     }
-  
+
     tbody tr:nth-child(odd) td {
-      background-color: #505050;
-      color: #fff;
+        background-color: #505050;
+        color: #fff;
     }
-  
+
     tbody tr:nth-child(even) td {
-      background-color: #b1b1b1;
-      color: #000;
+        background-color: #b1b1b1;
+        color: #000;
     }
-  
+
     tr {
-      margin-bottom: 0;
+        margin-bottom: 0;
     }
-  
+
     td {
-      padding-left: 0.75rem;
-      text-align: center;
-      color: #fff;
-      background-color: unset;
+        padding-left: 0.75rem;
+        text-align: center;
+        color: #fff;
+        background-color: unset;
     }
-  
+
     td:nth-child(odd) {
-      background-color: unset;
+        background-color: unset;
     }
-  
+
     td:before {
-      content: none;
+        content: none;
     }
-  }
+}
