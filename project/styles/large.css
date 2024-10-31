@@ -4,8 +4,8 @@
     }
   
     header {
-        flex-direction: column; /* Stack elements vertically on mobile */
-        align-items: center; /* Ensure full width on items */
+        flex-direction: column; 
+        align-items: center; 
     }
     
     #mainNav {

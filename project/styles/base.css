@@ -107,9 +107,9 @@ footer {
 }
 
 .navContainer li a {
-    padding: 10px 15px; /* Add consistent padding */
-    display: inline-block; /* Ensure it’s an inline-block for better spacing */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    padding: 10px 15px; 
+    display: inline-block; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 .navContainer li a:hover {
