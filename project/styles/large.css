@@ -4,18 +4,24 @@
     }
   
     #mainNav {
-      position: static;
-      display: block;
-      width: auto;
+        display: grid; /* Change to grid layout */
+        grid-template-rows: repeat(auto-fill, minmax(50px, 1fr)); /* Create rows for each menu item */
+        gap: 10px; /* Space between items */
+        background-color: var(--mainColor); /* Optional: Background color */
     }
-  
-    nav ul {
-      flex-direction: row;
-      justify-content: space-around;
+
+    #mainNav ul {
+        display: contents; /* Allow items to follow the grid from the parent */
     }
-  
-    nav ul li {
-      margin-bottom: 0;
+
+    #mainNav ul li {
+        text-align: center; /* Center-align menu items for mobile */
+    }
+
+    #mainNav ul li a {
+        display: block;
+        padding: 10px;
+        width: 100%;
     }
   
     main {
