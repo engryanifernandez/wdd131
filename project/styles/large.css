@@ -4,6 +4,12 @@
         align-items: stretch; /* Ensure full width on items */
     }
     
+    #menuToggle {
+        width: 100%; /* Full width for the toggle button */
+        padding: 10px; /* Add padding if needed */
+        text-align: center; /* Center the toggle button text */
+    }
+
     #mainNav {
         display: none;
         position: absolute;
