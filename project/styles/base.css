@@ -129,11 +129,11 @@ nav {
     font-size: 1.2rem;
 }
 
-#mainNav .logo {
-    margin-right: 120px;
+.logo {
+    margin-right: 50px;
 }
 
-#mainNav .logo img {
+.logo img {
     height: auto;
     width: 150px;
     border-radius: 75px;
