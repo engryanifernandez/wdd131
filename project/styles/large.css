@@ -5,6 +5,7 @@
 
     .navContainer {
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         flex-flow: row wrap;
@@ -14,13 +15,6 @@
         position: static;
         display: block;
         width: auto;
-    }
-
-    nav ul {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        flex-flow: row wrap;
     }
 
     nav ul li {
