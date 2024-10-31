@@ -10,13 +10,28 @@
     }
 
     #mainNav.show {
-        flex-direction: column; 
-        width: 100%; 
-        background-color: var(--heading); 
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--heading);
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        align-items: center;
     }
 
     nav ul li {
-        margin-bottom: 0;
+        margin-bottom: 1rem;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 1rem;
+        text-align: center;
     }
 
     main {
