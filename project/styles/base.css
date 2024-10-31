@@ -131,7 +131,7 @@ nav {
 
 nav ul {
     display: flex; /* Enable flexbox for the list */
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: row; /* Stack items vertically */
     padding: 0; /* Remove default padding */
     margin: 0; /* Remove default margin */
     list-style: none; /* Remove default list styles */
