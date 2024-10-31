@@ -93,7 +93,8 @@ footer {
 }
 
 #mainNav.show {
-    display: block;
+    display: flex; /* Change from block to flex */
+    flex-direction: column; 
 }
 
 .navContainer li:first-child {
