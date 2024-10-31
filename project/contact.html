@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hazel Diane Fernandez">
+    <title>Booking - Caleb's Firearm Training</title>
+    <meta name="description" content="Book your spot for Caleb's Firearm Training sessions. 
+        Learn essential firearm safety, handling techniques, and 
+        marksmanship skills from an experienced instructor. 
+        Join us to enhance your shooting proficiency in a safe and supportive environment.">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preload" href="https://fonts.gstatic.com/s/greatvibes/v6/RWmMoKWR9v4ksMfaWd_JN9XFiaQ.woff2" as="font"
+        type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font"
+        type="font/woff2" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="navContainer">
+            <button id="menuToggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <a href="#home" class="logo">
+                        <img src="images/CalebFirearmTraining.jpg" alt="Logo">
+                    </a>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="highlights.html">Highlights and Testimonials</a></li>
+                    <li><a href="contact.html" class="active">Contact and Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Firearm Training Booking - Choose Your Session</h1>
+        <section id="existingBookings">
+            <h2>Current Bookings</h2>
+            <div class="tableResponsive">
+                <table id="bookingsTable">
+                    <thead>
+                        <tr>
+                            <th>Training Date</th>
+                            <th>Start Time</th>
+                            <th>Duration (Hours)</th>
+                            <th>Location</th>
+                            <th>Instructor</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+        <section id="bookingForm">
+            <h2>Training Session Booking Form</h2>
+            <form id="trainingForm">
+                <label for="bandName">Your Name:</label>
+                <input type="text" id="traineeName" name="traineeName" required>
+
+                <label for="sessionType">Session Type:</label>
+                <select id="sessionType" name="sessionType" required>
+                    <option value="">Select a session type</option>
+                    <option value="Safety Protocols">Safety Protocols</option>
+                    <option value="Introduction to Firearms">Introduction to Firearms</option>
+                    <option value="Marksmanship Training">Marksmanship Training</option>
+                    <option value="Tactical Training">Tactical Training</option>
+                    <option value="Cleaning and Maintenance">Cleaning and Maintenance</option>
+                    <option value="Legal and Ethical Considerations">Legal and Ethical Considerations</option>
+                    <option value="Advanced Skills Development">Advanced Skills Development</option>
+                    <option value="Physical Conditioning">Physical Conditioning</option>
+                    <option value="Psychological Preparation">Psychological Preparation</option>
+                    <option value="Certification and Progress Tracking">Certification and Progress Tracking</option>
+                </select>
+
+                <label for="date">Training Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Start Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="duration">Duration (hours):</label>
+                <input type="number" id="duration" name="duration" min="1" max="8" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Caleb's Firearm Training. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

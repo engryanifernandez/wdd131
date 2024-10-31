@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hazel Diane Fernandez">
+    <title>Highlights and Testimonials - Caleb's Firearm Training</title>
+    <meta name="description"
+        content="Stay updated with the latest highlights and news from Caleb's Firearm Training. 
+        Discover new courses, training tips, and community events!">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preload" href="https://fonts.gstatic.com/s/greatvibes/v6/RWmMoKWR9v4ksMfaWd_JN9XFiaQ.woff2" as="font"
+        type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font"
+        type="font/woff2" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="navContainer">
+            <button id="menuToggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <a href="#home" class="logo">
+                        <img src="images/CalebFirearmTraining.jpg" alt="Logo">
+                    </a>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="highlights.html" class="active">Highlights and Testimonials</a></li>
+                    <li><a href="contact.html">Contact and Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Firearm Training Highlights and Testimonials</h1>
+        <h2>Latest Updates</h2>
+        <section id="newsFeed"></section>
+        <section id="submitNews">
+            <h2>Submit Your Testimonials</h2>
+            <form id="newsSubmissionForm">
+                <label for="newsTitle">Title:</label>
+                <input type="text" id="newsTitle" name="newsTitle" required>
+
+                <label for="newsContent">Content:</label>
+                <textarea id="newsContent" name="newsContent" rows="7" required></textarea>
+
+                <button type="submit">Submit Testimonials</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Caleb's Firearm Training. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
