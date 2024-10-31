@@ -83,7 +83,6 @@ footer {
     flex-flow: column wrap;
     font-family: "Roboto", sans-serif;
     position: relative;
-    text-align: center;
 }
 
 #mainNav {
