@@ -5,7 +5,7 @@
   
     header {
         flex-direction: column; /* Stack elements vertically on mobile */
-        align-items: stretch; /* Ensure full width on items */
+        align-items: center; /* Ensure full width on items */
     }
     
     #mainNav {
