@@ -89,7 +89,7 @@ footer {
     left: 0;
     width: 100%;
     display: none;
-    justify-content: center;
+    background-color: var(--heading);
 }
 
 #mainNav.show {
