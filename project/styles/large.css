@@ -1,4 +1,8 @@
 @media (min-width: 520px) {
+    #menuToggle {
+        display: none;
+    }
+
     .navContainer {
         display: flex;
         justify-content: space-around;
