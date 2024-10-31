@@ -3,14 +3,6 @@
         display: none;
     }
 
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        flex-flow: row wrap;
-    }
-
     #mainNav {
         position: static;
         display: block;
@@ -18,13 +10,10 @@
     }
 
     #mainNav.show {
-        display: flex; /* Show nav items when toggled */
-        flex-direction: column; /* Stack nav items vertically */
-        width: 100%; /* Ensure it takes full width */
-        background-color: var(--heading); /* Optional: Add background color */
+        flex-direction: column; 
+        width: 100%; 
+        background-color: var(--heading); 
     }
-
-    
 
     nav ul li {
         margin-bottom: 0;
