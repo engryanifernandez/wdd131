@@ -80,7 +80,7 @@ footer {
     padding: 1rem;
     background-color: var(--heading);
     color: var(--headingfont);
-    flex-flow: column wrap;
+  
     font-family: "Roboto", sans-serif;
     position: relative;
 }
